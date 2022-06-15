@@ -1,0 +1,141 @@
+<Project version="20.5.0.7" edition="pro" localizationFileName="C:\Program Files (x86)\SQL Maestro Group\PHP Generator for MySQL Professional\lang.es.php" phpDriver="1" outputPath="C:\xampp\htdocs\nonosys\norfor\desarrollo" copySystemFiles="false" generateModifiedDataOnly="true" outputFilesExtension="php" colorSchemeName="yeti-compact">
+  <ConnectionOptions host="localhost" port="3306" login="norfordbuser" password="]O?J_O?J_/KMZ_WJJ0~~" database="norfor" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ConnectionOptions>
+  <ScriptConnectionOptions host="localhost" port="3306" login="norfordbuser" password="]O?J_O?J_/KMZ_WJJ0~~" database="norfor" client_encoding="utf8" allow_old_password="false">
+    <ssh_secure secure="false" port="22" authentication_mode="0"/>
+    <http_tunnel tunneling="false" url="">
+      <http_proxy_server use_proxy="false" port="8080"/>
+      <http_authentication/>
+    </http_tunnel>
+  </ScriptConnectionOptions>
+  <DataSources>
+    <DataSource name="transportes"/>
+  </DataSources>
+  <Presentation disableMagicQuotesRuntime="false" showEnvironmentVariables="false" showExecutedQueries="false" showPHPErrorsAndWarnings="false">
+    <Pages>
+      <Page type="table" tableName="transportes" numberByDataSource="0" fileName="transportes" caption="Transportes" shortCaption="Transportes" addSeparator="false" horizontalFilterCondition="" recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true">
+        <BeforeGridText/>
+        <DetailedDescription/>
+        <ColumnPresentations>
+          <ColumnPresentation fieldName="pkTransporte" caption="Pk Transporte" showColumnFilter="false" selectedFilterOperators="1573119">
+            <ViewProperties type="text">
+              <Format type="number" thousandSeparator="."/>
+            </ViewProperties>
+            <EditProperties type="textBox" maxLength="0"/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="transporte" caption="Transporte" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="pat_cam_trans" caption="Pat Cam Trans" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+          <ColumnPresentation fieldName="pat_acop_prod" caption="Pat Acop Prod" showColumnFilter="false" canSetNull="true" selectedFilterOperators="1589247">
+            <ViewProperties type="text" maxLength="75"/>
+            <EditProperties type="textArea" columnCount="50" rowCount="8" placeholder=""/>
+          </ColumnPresentation>
+        </ColumnPresentations>
+        <Columns>
+          <List>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </List>
+          <View>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </View>
+          <Edit>
+            <Column fieldName="pkTransporte" visible="false"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </Edit>
+          <Insert>
+            <Column fieldName="pkTransporte" visible="false"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </Insert>
+          <QuickFilter>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </QuickFilter>
+          <FilterBuilder>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </FilterBuilder>
+          <Print>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </Print>
+          <Export>
+            <Column fieldName="pkTransporte"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </Export>
+          <Compare>
+            <Column fieldName="pkTransporte" visible="false"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </Compare>
+          <MultiEdit>
+            <Column fieldName="pkTransporte" visible="false"/>
+            <Column fieldName="transporte"/>
+            <Column fieldName="pat_cam_trans"/>
+            <Column fieldName="pat_acop_prod"/>
+          </MultiEdit>
+        </Columns>
+        <Details/>
+        <RecordPermissions useRecordPermissions="false"/>
+        <PartitionNavigators/>
+      </Page>
+    </Pages>
+    <UserAuthorization type="tableBased" tableName="usuarios" userIdField="pkUsuario" userNameField="usuario" passwordField="password" passwordEncryption="SHA256" allowUserToChangePassword="true"/>
+    <UserGrants enableGuestAccess="false" storageType="table">
+      <UserGrantsStorage userPermsTableName="phpgen_user_perms" userPermsUserId="user_id" userPermsPageName="page_name" userPermsAcl="perm_name"/>
+    </UserGrants>
+    <Header>
+&lt;span class=&quot;navbar-brand&quot;&gt;
+    &lt;span&gt;
+        &lt;a href='index.php'&gt;
+          &lt;img src=&quot;norfor-sa.png&quot; style=&quot;height: 36px; margin-top: -10px;&quot;&gt;
+        &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/span&gt;    </Header>
+    <Footer>
+&lt;center&gt;© 2022 - Norfor S.A.&lt;/center&gt;    </Footer>
+    <PHPOptions/>
+    <Groups>
+      <Group caption="No group"/>
+    </Groups>
+    <outgoingMailSettings mailer="0" fromEmail="" fromName=""/>
+  </Presentation>
+  <UserCSS>
+.navbar-default {
+    background-color: #00c853   ;
+}  </UserCSS>
+  <PdfUserStyles/>
+  <PrintUserStyles/>
+  <UserJS/>
+  <ExcludedPaths/>
+  <DefaultPageProperties recordsPerPage="20" NavigatorPosition="3" insertAbilityMode="1" deleteAbilityMode="3" deleteSelectedAbilityMode="3" contentEncoding="UTF-8" exportAllRecordsAvailable="31" exportSelectedRecordsAvailable="31" exportSingleRecordFromGridAvailable="0" exportRecordFromViewFormAvailable="31" printAvailable="13" highlightRowOnMouseHover="true" useActionImages="true" showKeyColumnsImagesInGridHeader="false" showLineNumbers="true" condensedTable="true"/>
+  <DefaultDataFormats numberAfterDecimal="2" DecimalSeparator="," ThousandSeparator="." DateTimeFormat="d-m-Y H:i:s" DateFormat="d-m-Y" firstDayOfWeek="0"/>
+</Project>
